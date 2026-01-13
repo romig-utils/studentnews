@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            nav {
+            border-bottom: 1px solid black;
+            }
+
+            .crumbs ol {
+            list-style-type: none;
+            padding-left: 0;
+            }
+
+            .crumb {
+            display: inline-block;
+            }
+
+            .crumb a::after {
+            display: inline-block;
+            color: black;
+            content: ">";
+            font-size: 80%;
+            font-weight: bold;
+            padding: 0 3px;
+            }
+            a{color:blue;}
+            a:visited {color:blue;}
+        </style>
+        <title>Student News Map & Transcripts</title>
+    </head>
+    <body>
+        <nav class="crumbs">
+            <ol>
+                <li class="crumb"><a href='/years'>Years</a></li>
+                <li class="crumb">2026</li>
+            </ol>
+        </nav>
+
+        <h1>Student News Map & Transcripts</h1>
+        <h2>2026</h2>
+        <p>Select a week:</p>
+        <button onclick="window.location.href='jan12-16'">January 12-16</button><br>
+    </body>
+</html>

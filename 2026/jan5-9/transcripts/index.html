@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            nav {
+            border-bottom: 1px solid black;
+            }
+
+            .crumbs ol {
+            list-style-type: none;
+            padding-left: 0;
+            }
+
+            .crumb {
+            display: inline-block;
+            }
+
+            .crumb a::after {
+            display: inline-block;
+            color: black;
+            content: ">";
+            font-size: 80%;
+            font-weight: bold;
+            padding: 0 3px;
+            }
+            a{color:blue;}
+            a:visited {color:blue;}
+        </style>
+        <title>Student News Map & Transcripts</title>
+    </head>
+    <body>
+        <nav class="crumbs">
+            <ol>
+                <li class="crumb"><a href='/years'>Years</a></li>
+                <li class="crumb"><a href='/2026'>2026</a></li>
+                <li class="crumb"><a href='/2026/jan5-9'>January 5-9</a></li>
+                <li class="crumb">Transcripts</li>
+            </ol>
+        </nav>
+
+        <h1>Student News Map & Transcripts</h1>
+        <h2>Transcripts of January 5-9</h2>
+        <p>Select a day:</p>
+        <button onclick="window.location.href='jan9'">Jan 9</button><br>
+        <button onclick="window.location.href='jan8'">Jan 8</button><br>
+        <button onclick="window.location.href='jan7'">Jan 7</button><br>
+        <button onclick="window.location.href='jan6'">Jan 6</button><br>
+        <button onclick="window.location.href='jan5'">Jan 5</button><br>
+    </body>
+</html>
